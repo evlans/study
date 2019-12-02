@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+   
+   
+    <script>
+      'use strict';
+     
+      
+    function without(arrA) {     
+        var arrB = [];
+        for (var i = 1; i < arguments.length; i++) {
+          arrB[i] = arguments[i];
+        }
+        return arrA.filter(x => !arrB.includes(x));
+    }
+           
+    alert(without([2, 1, 10, 20], 1, 2, 10)); 
+      
+
+          
+    </script> 
+
+<p>...</p>
+</body>
+
+</html>

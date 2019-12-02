@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+   
+   
+    <script>
+      'use strict';
+     
+      
+      function arrayDiff(arrA,arrB) {
+          var arrA = [1, 2, 3]; 
+          var arrB = [1, 2, 4];
+          
+          return arrA.filter(x => !arrB.includes(x)).concat(arrB.filter(x => !arrA.includes(x)));
+          }
+           
+      alert(arrayDiff());
+    </script> 
+
+<p>...</p>
+</body>
+
+</html>

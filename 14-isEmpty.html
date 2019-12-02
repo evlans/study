@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+   
+   
+    <script>
+      'use strict';
+      
+      function isEmpty(obj) {
+       for (let key in obj) { // если цикл начнет выполняться - в объекте есть свойства
+          return false;
+          }
+         return true;
+         }
+      
+      let schedule = {};
+
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "get up";
+
+alert( isEmpty(schedule) ); // false
+
+      
+    </script> 
+
+<p>...</p>
+</body>
+
+</html>
