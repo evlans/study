@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+   
+   
+    <script>
+      'use strict';
+     
+      let arr = [ 1, 2, 0, -5, 15 ];
+      
+      // arr.sort(function(a, b) { return a - b; });
+      arr.sort( (a, b) => a - b );
+      
+      alert(arr);  // 1, 2, 15
+
+      
+      let names = 'Вася, Петя, Маша';
+
+      let arr = names.split(', ');
+
+      for (let name of arr) {
+      alert( `Сообщение получат: ${name}.` ); // Сообщение получат: Вася (и другие имена)
+      }
+           
+    </script> 
+
+<p>...</p>
+</body>
+
+</html>
